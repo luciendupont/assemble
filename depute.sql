@@ -74,7 +74,8 @@ Région_ecolonupes VARCHAR(250),
 Département_ecolonupes VARCHAR(250),
 circonscription_ecolonupes VARCHAR(250),
 Profession_ecolonupes VARCHAR(250),
-Groupe_ecolonupesVARCHAR(250));
+Groupe_ecolonupesVARCHAR(250)FOREIGN KEY
+);
 INSERT INTO ecolonupes (id_ecolonupes,Nom_ecolonupes,Prénom_ecolonupes,Région_ecolonupes,Département_ecolonupes,circonscription_ecolonupes,Profession_ecolonupes,Groupe_ecolonupes)
 values
  (1,"Lucas","Benjamin","Ile-de-France","Yvelines","8","consultant","Écologiste - NUPES"),
@@ -105,7 +106,8 @@ région_gnupes VARCHAR(250),
 Département_gnupes VARCHAR(250),
 circonscription_gnupes VARCHAR(250),
 Profession_gunpes VARCHAR(250),
-Groupe_gnupes VARCHAR(250));
+Groupe_gnupes VARCHAR(250) FOREIGN KEY
+);
 INSERT INTO gnupes(id_gnupes,Nom_gnupes,prénom-gnupes,région_gnupes,Département_gnupes,circonscription_gnupes,Profession_gunpes,Groupe_gnupes)
 values
  (1,"Dharréville","Pierre","Provence-Alpes-Côte dAzur","Bouches-du-Rhône","13","Employé (secteur privé)","Gauche démocrate et républicaine - NUPES"),
@@ -137,7 +139,8 @@ Région_horizons VARCHAR(250),
 Département_horizons VARCHAR(250),
 circonscription_horizons VARCHAR(250),
 Profession_horizons VARCHAR(250),
-Groupe_horizons VARCHAR(250));
+Groupe_horizons VARCHAR(250) FOREIGN KEY
+);
 INSERT INTO MoDemhorizons (id_horizons,Nom_horizons,Prénom_horizons,Région_horizons,Département_horizons,circonscription_horizons,Profession_horizons,Groupe_horizons)
  
  values
@@ -179,7 +182,8 @@ INSERT INTO MoDemhorizons (id_horizons,Nom_horizons,Prénom_horizons,Région_hor
   Département_lfi VARCHAR(250),
   circonscription_lfi VARCHAR(250),
   Profession_lfi VARCHAR(250),
-  Groupe_lfi VARCHAR(250));
+  Groupe_lfi VARCHAR(250) FOREIGN KEY
+  );
 INSERT INTO lfi (id_lfi,Nom_lfi,Prénom_lfi,Région_lfi,Département_lfi,circonscription_lfi,Profession_lfi,Groupe_lfi)
  values    
   (1,"Martinet","William","Ile-de-France","Yvelines","11","Cadre administratif","La France insoumise - Nouvelle Union Populaire écologique et sociale"),
@@ -264,7 +268,8 @@ Région_lr VARCHAR(250),
 Département_lr VARCHAR(250),
 circonscription_lr VARCHAR(250),
 Profession_lr VARCHAR(250),
-Groupe_lr VARCHAR(250));
+Groupe_lr VARCHAR(250) FOREIGN KEY
+);
 INSERT INTO lr (id_lr,Nom_lr,Prénom_lr,Région_lr,Département_lr,circonscription_lr,Profession_lr,Groupe_lr)
   values
   (1,"Bazin-Malgras","Valérie","Grand Est","Aube","2","Commerçante","Les Républicains"),
@@ -335,7 +340,8 @@ INSERT INTO lr (id_lr,Nom_lr,Prénom_lr,Région_lr,Département_lr,circonscripti
  Département_liot VARCHAR(250),
  circonscription_liot VARCHAR(250),
  Profession_liot VARCHAR(250),
- Groupe_liot VARCHAR(250));
+ Groupe_liot VARCHAR(250) FOREIGN KEY
+ );
 INSERT INTO liot (id_liot,Nom_liot,Prénom-liot,Région_liot,Département_liot,circonscription_liot,Profession_liot,Groupe_liot)
 
  values
@@ -367,7 +373,8 @@ INSERT INTO liot (id_liot,Nom_liot,Prénom-liot,Région_liot,Département_liot,c
  Département_ni VARCHAR(250),
  circonscription_ni VARCHAR(250),
  Profession_ni VARCHAR(250),
- Groupe_ni VARCHAR(250));
+ Groupe_ni VARCHAR(250) FOREIGN KEY
+ );
 INSERT INTO ni (id_ni,Nom_ni,Prénom_ni,Région_ni,Département_ni,circonscription_ni,Profession_ni,Groupe_ni)
  values
  (1,"Ménard","Emmanuelle","Occitanie","Hérault","6","Journaliste et autre média","Non inscrit"),
@@ -383,7 +390,8 @@ Région_rn VARCHAR(250),
 Département_rn VARCHAR(250),
 circonscription_rn VARCHAR(250),
 Profession_rn VARCHAR(250),
-Groupe_rn VARCHAR(250));
+Groupe_rn VARCHAR(250) FOREIGN KEY
+);
 INSERT INTO rn(id_rn,Nom_rn,Prénom_rn,Région_rn,Département_rn,circonscription_rn,Profession_rn,Groupe_rn)
  values
  (1,"Levavasseur","Katiana","Normandie","Eure","2","Ouvrier de type industriel","Rassemblement National"),
@@ -482,7 +490,8 @@ Région_ren VARCHAR(250),
 Département_ren VARCHAR(250),
 circonscription_ren VARCHAR(250),
 Profession_ren VARCHAR(250),
-Groupe_ren VARCHAR(250));
+Groupe_ren VARCHAR(250) FOREIGN KEY
+);
 INSERT INTO ren (id_ren,Nom_ren,Prénom_ren,Région_ren,Département_ren,circonscription_ren,Profession_ren,Groupe_ren)
   values
   (1,"Panosyan-Bouvet","Astrid","Ile-de-France","Paris","4","Cadre administratif et commercial dentreprise","Renaissance"),
@@ -662,7 +671,8 @@ INSERT INTO ren (id_ren,Nom_ren,Prénom_ren,Région_ren,Département_ren,circons
  Département_sonupes VARCHAR(250),
  circonscription_sonupes VARCHAR(250),
  Profession_sonupes VARCHAR(250),
- Groupe_sonupes VARCHAR(250));
+ Groupe_sonupes VARCHAR(250) FOREIGN KEY
+ );
 INSERT INTO sonupes (id_sonupes,Nom_sonupes,Prénom_sonupes,Région_sonupes,Département_sonupes,circonscription_sonupes,Profession_sonupes,Groupe_sonupes)
  values
  (1,"Hajjar","Johnny","Martinique","Martinique","3","Professeur du second degré","Socialistes et apparentés (membre de l’intergroupe NUPES)"),
