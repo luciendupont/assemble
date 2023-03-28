@@ -68,7 +68,7 @@ values
 
 
 CREATE TABLE ecolonupes(id_ecolonupes  VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
-Nom_ecolonupes VARCHAR(250),
+Nom_ecolonupes VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
 Prénom_ecolonupes VARCHAR(250),
 Région_ecolonupes VARCHAR(250),
 Département_ecolonupes VARCHAR(250),
@@ -100,7 +100,7 @@ values
  (21,"Sebaihi","Sabrina","Ile-de-France","Hauts-de-Seine","4","Profession libérale","Écologiste - NUPES"),
  (22,"Pochon","Marie","Auvergne-Rhône-Alpes","Drôme","3","Responsable associative","Écologiste - NUPES");
 CREATE TABLE gnupes(id_gnupes VARCHAR(250),Nom_gnupes VARCHAR(250),
-prénom_gnupes VARCHAR(250),
+prénom_gnupes VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
 région_gnupes VARCHAR(250),
 Département_gnupes VARCHAR(250),
 circonscription_gnupes VARCHAR(250),
@@ -131,9 +131,9 @@ values
  (21,"Rimane","Davy","Guyane","Guyane","2","Technicien","Gauche démocrate et républicaine - NUPES"),
  (22,"Brotherson","Moetai","Polynésie française","Polynésie Française","3","fonctionnaire","Gauche démocrate et républicaine - NUPES");
 CREATE TABLE horizons(id_horizons VARCHAR(250)
-,Nom_horizons VARCHAR(50),
+,Nom_horizons VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
 Prénom_horizons VARCHAR(250),
-Région_horizons VARCHAR(50),
+Région_horizons VARCHAR(250),
 Département_horizons VARCHAR(250),
 circonscription_horizons VARCHAR(250),
 Profession_horizons VARCHAR(250),
@@ -173,7 +173,7 @@ INSERT INTO MoDemhorizons (id_horizons,Nom_horizons,Prénom_horizons,Région_hor
  (29,"Gernigon","François","Pays de la Loire","Maine-et-Loire","1","Ancien cadre","Horizons et apparentés");
   
   CREATE TABLE lfi(id_lfi VARCHAR(250),
-  Nom_lfi VARCHAR(250),
+  Nom_lfi VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
   Prénom_lfi VARCHAR(250),
   Région_lfi VARCHAR(250),
   Département_lfi VARCHAR(250),
@@ -258,7 +258,7 @@ INSERT INTO lfi (id_lfi,Nom_lfi,Prénom_lfi,Région_lfi,Département_lfi,circons
  (74,"Clouet","Hadrien","Occitanie","Haute-Garonne","1","Professeur, profession scientifique","La France insoumise - Nouvelle Union Populaire écologique et sociale");
  
 CREATE TABLE lr(id_lr VARCHAR(250),
-Nom_lr VARCHAR(250),
+Nom_lr VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
 Prénom_lr VARCHAR(250),
 Région_lr VARCHAR(250),
 Département_lr VARCHAR(250),
@@ -329,7 +329,7 @@ INSERT INTO lr (id_lr,Nom_lr,Prénom_lr,Région_lr,Département_lr,circonscripti
  (60,"Dalloz","Marie-Christine","Bourgogne-Franche-Comté","Jura","2","employé","Les Républicains"),
  (61,"Genevard","Annie","Bourgogne-Franche-Comté","Doubs","5","Professeur du secondaire","Les Républicains");
  CREATE TABLE liot(id_liot VARCHAR(250),
- Nom_liot VARCHAR(250),
+ Nom_liot VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
  Prénom_liot VARCHAR(250),
  Région_liot VARCHAR(250),
  Département_liot VARCHAR(250),
@@ -361,7 +361,7 @@ INSERT INTO liot (id_liot,Nom_liot,Prénom-liot,Région_liot,Département_liot,c
  (19,"Taupiac","David","Occitanie","Gers","2","Consultant aéronautique","Libertés, Indépendants, Outre-mer et Territoires"),
  (20,"Bassire","Nathalie","Réunion","Réunion","3","Retraitée de lenseignement","Libertés, Indépendants, Outre-mer et Territoires");
  CREATE TABLE ni(id_ni VARCHAR(250),
- Nom_ni VARCHAR(250),
+ Nom_ni VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
  Prénom_ni VARCHAR(250),
  Région_ni VARCHAR(250),
  Département_ni VARCHAR(250),
@@ -377,7 +377,7 @@ INSERT INTO ni (id_ni,Nom_ni,Prénom_ni,Région_ni,Département_ni,circonscripti
  (5,"Habib","David","Nouvelle-Aquitaine","Pyrénées-Atlantiques","3","Cadre","Non inscrit");
 
 CREATE TABLE rn(id_rn VARCHAR(250),
-Nom_rn VARCHAR(250),
+Nom_rn VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
 Prénom_rn VARCHAR(250),
 Région_rn VARCHAR(250),
 Département_rn VARCHAR(250),
@@ -476,7 +476,7 @@ INSERT INTO rn(id_rn,Nom_rn,Prénom_rn,Région_rn,Département_rn,circonscriptio
  (89,"Beaurain","José","Hauts-de-France","Aisne","4","Artisan","Rassemblement National");
  
 CREATE TABLE ren(id_ren varchar(250),
-Nom_ren VARCHAR(250),
+Nom_ren VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
 Prénom_ren VARCHAR(250),
 Région_ren VARCHAR(250),
 Département_ren VARCHAR(250),
@@ -656,7 +656,7 @@ INSERT INTO ren (id_ren,Nom_ren,Prénom_ren,Région_ren,Département_ren,circons
  (172,"Seo","Mikaele","Wallis-et-Futuna","Wallis-et-Futuna","1","Profession intermédiaire administrative de la fonction publique","Renaissance"),
  (173,"Sitzenstuhl","Charles","Grand Est","Bas-Rhin","5","Cadre de la fonction publique","Renaissance");
  CREATE TABLE sonupes(id_sonupes VARCHAR(250),
- Nom_sonupes VARCHAR(250),
+ Nom_sonupes VARCHAR(250) AUTO_INCREMENT PRIMARY KEY,
  Prénom_sonupes VARCHAR(250),
  Région_sonupes VARCHAR(250),
  Département_sonupes VARCHAR(250),
