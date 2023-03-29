@@ -39,7 +39,7 @@ class Ni
         return $this->id;
     }
 
-    public function getNomi(): ?string
+    public function getNomNi(): ?string
     {
         return $this->nomNi;
     }
