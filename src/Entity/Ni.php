@@ -10,43 +10,43 @@ class Ni
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column (name:"id_ni")]
     private ?int $id = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $nomLi = null;
+    private ?string $nomNi = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $preNi = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $regLi = null;
+    private ?string $regNi = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $depLi = null;
+    private ?string $depNi = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $cirLi = null;
+    private ?string $cirNi = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $proLi = null;
+    private ?string $proNi = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $groLi = null;
+    private ?string $groNi = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNomLi(): ?string
+    public function getNomi(): ?string
     {
-        return $this->nomLi;
+        return $this->nomNi;
     }
 
-    public function setNomLi(?string $nomLi): self
+    public function setNomNi(?string $nomNi): self
     {
-        $this->nomLi = $nomLi;
+        $this->nomNi = $nomNi;
 
         return $this;
     }
@@ -63,62 +63,62 @@ class Ni
         return $this;
     }
 
-    public function getRegLi(): ?string
+    public function getRegNi(): ?string
     {
-        return $this->regLi;
+        return $this->regNi;
     }
 
-    public function setRegLi(?string $regLi): self
+    public function setRegNi(?string $regNi): self
     {
-        $this->regLi = $regLi;
+        $this->regNi = $regNi;
 
         return $this;
     }
 
-    public function getDepLi(): ?string
+    public function getDepNi(): ?string
     {
-        return $this->depLi;
+        return $this->depNi;
     }
 
-    public function setDepLi(?string $depLi): self
+    public function setDepNi(?string $depNi): self
     {
-        $this->depLi = $depLi;
+        $this->depNi = $depNi;
 
         return $this;
     }
 
-    public function getCirLi(): ?string
+    public function getCirNi(): ?string
     {
-        return $this->cirLi;
+        return $this->cirNi;
     }
 
-    public function setCirLi(?string $cirLi): self
+    public function setCirNi(?string $cirNi): self
     {
-        $this->cirLi = $cirLi;
+        $this->cirNi = $cirNi;
 
         return $this;
     }
 
-    public function getProLi(): ?string
+    public function getProNi(): ?string
     {
-        return $this->proLi;
+        return $this->proNi;
     }
 
-    public function setProLi(?string $proLi): self
+    public function setProNi(?string $proNi): self
     {
-        $this->proLi = $proLi;
+        $this->proNi = $proNi;
 
         return $this;
     }
 
-    public function getGroLi(): ?string
+    public function getGroNi(): ?string
     {
-        return $this->groLi;
+        return $this->groNi;
     }
 
-    public function setGroLi(?string $groLi): self
+    public function setGroNi(?string $groNi): self
     {
-        $this->groLi = $groLi;
+        $this->groNi = $groNi;
 
         return $this;
     }

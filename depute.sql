@@ -5,14 +5,14 @@ use assemble;
 CREATE TABLE modem
 (id_modem int ,
 nom_modem VARCHAR(250),
-Prénom_modem VARCHAR(250),
-Région_modem VARCHAR(250),
-Dep_modem VARCHAR(250),
+prenom_modem VARCHAR(250),
+region_modem VARCHAR(250),
+dep_modem VARCHAR(250),
 circo_modem VARCHAR(250),
 pro_modem VARCHAR(250),
 gro_modem VARCHAR(250)
  );
-INSERT INTO modem(id_modem,Nom_modem,Prénom_modem,Région_modem,Dep_modem,circo_modem,pro_modem,gro_modem)
+INSERT INTO modem(id_modem,nom_modem,prenom_modem,region_modem,dep_modem,circo_modem,pro_modem,gro_modem)
 values
  (1,"Lasserre","Florence","Nouvelle-Aquitaine","Pyrénées-Atlantiques","5","Employée du secteur privé","Démocrate (MoDem et Indépendants)"),
 (2,"Falorni","Olivier","Nouvelle-Aquitaine","Charente-Maritime","1","Professeur du secondaire","Démocrate (MoDem et Indépendants)"),
@@ -66,18 +66,17 @@ values
  (51,"Petit","Frédéric","Français établis hors de France","Français établis hors de France",7,"Ingénieur","Démocrate (MoDem et Indépendants)"),
  (52,"Ferrari","Marina","Auvergne-Rhône-Alpes","Savoie","1","Cadre administratif et commercial dentreprise","Démocrate (MoDem et Indépendants)");
 
-
 CREATE TABLE ecolo(
 id_ecolo  int,
 nom_ecolo VARCHAR(250),
-pré_ecolo VARCHAR(250),
-rég_ecolo VARCHAR(250),
-dép_ecolo VARCHAR(250),
+pre_ecolo VARCHAR(250),
+reg_ecolo VARCHAR(250),
+dep_ecolo VARCHAR(250),
 cir_ecolo VARCHAR(250),
 pro_ecolo VARCHAR(250),
 gro_ecolo VARCHAR(250)
 );
-INSERT INTO ecolo(id_ecolo,nom_ecolo,pré_ecolo,rég_ecolo,dép_ecolo,cir_ecolo,pro_ecolo,gro_ecolo)
+INSERT INTO ecolo(id_ecolo,nom_ecolo,pre_ecolo,reg_ecolo,dep_ecolo,cir_ecolo,pro_ecolo,gro_ecolo)
 values
  (1,"Lucas","Benjamin","Ile-de-France","Yvelines","8","consultant","Écologiste - NUPES"),
  (2,"Thierry","Nicolas","Nouvelle-Aquitaine","Gironde","2","Consultant en développement durable","Écologiste - NUPES"),
@@ -103,14 +102,14 @@ values
  (22,"Pochon","Marie","Auvergne-Rhône-Alpes","Drôme","3","Responsable associative","Écologiste - NUPES");
 CREATE TABLE gnupes(id_gnupes int,
 nom_gnupes VARCHAR(250),
-prénom_gnupes VARCHAR(250),
-région_gnupes VARCHAR(250),
-dép_gnupes VARCHAR(250),
+prenom_gnupes VARCHAR(250),
+region_gnupes VARCHAR(250),
+dep_gnupes VARCHAR(250),
 cir_gnupes VARCHAR(250),
 pro_gnupes VARCHAR(250),
 gro_gnupes VARCHAR(250)
 );
-INSERT INTO gnupes(id_gnupes,nom_gnupes,prénom_gnupes,région_gnupes,dép_gnupes,cir_gnupes,pro_gnupes,gro_gnupes)
+INSERT INTO gnupes(id_gnupes,nom_gnupes,prenom_gnupes,region_gnupes,dep_gnupes,cir_gnupes,pro_gnupes,gro_gnupes)
 values
  (1,"Dharréville","Pierre","Provence-Alpes-Côte dAzur","Bouches-du-Rhône","13","Employé (secteur privé)","Gauche démocrate et républicaine - NUPES"),
  (2,"Monnet","Yannick","Auvergne-Rhône-Alpes","Allier","1","Cadre de la fonction publique","Gauche démocrate et républicaine - NUPES"),
@@ -136,14 +135,14 @@ values
  (22,"Brotherson","Moetai","Polynésie française","Polynésie Française","3","fonctionnaire","Gauche démocrate et républicaine - NUPES");
 CREATE TABLE hor(id_hor int,
 nom_hor VARCHAR(250),
-prénom_hor VARCHAR(250),
-rég_hor VARCHAR(250),
-dép_hor VARCHAR(250),
+prenom_hor VARCHAR(250),
+reg_hor VARCHAR(250),
+dep_hor VARCHAR(250),
 cir_hor VARCHAR(250),
 pro_hor VARCHAR(250),
 gro_hor VARCHAR(250)
 );
-INSERT INTO hor(id_hor,nom_hor,prénom_hor,rég_hor,dép_hor,cir_hor,pro_hor,gro_hor)
+INSERT INTO hor(id_hor,nom_hor,prenom_hor,reg_hor,dep_hor,cir_hor,pro_hor,gro_hor)
  
  values
  
@@ -179,14 +178,14 @@ INSERT INTO hor(id_hor,nom_hor,prénom_hor,rég_hor,dép_hor,cir_hor,pro_hor,gro
   
   CREATE TABLE lfi(id_lfi int,
   nom_lfi VARCHAR(250),
-  prénom_lfi VARCHAR(250),
-  rég_lfi VARCHAR(250),
-  dép_lfi VARCHAR(250),
+  prenom_lfi VARCHAR(250),
+  reg_lfi VARCHAR(250),
+  dep_lfi VARCHAR(250),
   cir_lfi VARCHAR(250),
   pro_lfi VARCHAR(250),
   gro_lfi VARCHAR(250)
   );
-INSERT INTO lfi (id_lfi,nom_lfi,prénom_lfi,rég_lfi,dép_lfi,cir_lfi,pro_lfi,gro_lfi)
+INSERT INTO lfi (id_lfi,nom_lfi,prenom_lfi,reg_lfi,dep_lfi,cir_lfi,pro_lfi,gro_lfi)
  values    
   (1,"Martinet","William","Ile-de-France","Yvelines","11","Cadre administratif","La France insoumise - Nouvelle Union Populaire écologique et sociale"),
  (2,"Obono","Danièle","Ile-de-France","Paris","17","Bibliothécaire","La France insoumise - Nouvelle Union Populaire écologique et sociale"),
@@ -265,14 +264,14 @@ INSERT INTO lfi (id_lfi,nom_lfi,prénom_lfi,rég_lfi,dép_lfi,cir_lfi,pro_lfi,gr
  
 CREATE TABLE lr(id_lr int,
 nom_lr VARCHAR(250) ,
-prénom_lr VARCHAR(250),
-rég_lr VARCHAR(250),
-dép_lr VARCHAR(250),
+prenom_lr VARCHAR(250),
+reg_lr VARCHAR(250),
+dep_lr VARCHAR(250),
 cir_lr VARCHAR(250),
 pro_lr VARCHAR(250),
 gro_lr VARCHAR(250)
 );
-INSERT INTO lr (id_lr,nom_lr,prénom_lr,rég_lr,dép_lr,cir_lr,pro_lr,gro_lr)
+INSERT INTO lr (id_lr,nom_lr,prenom_lr,reg_lr,dep_lr,cir_lr,pro_lr,gro_lr)
   values
   (1,"Bazin-Malgras","Valérie","Grand Est","Aube","2","Commerçante","Les Républicains"),
  (2,"Hetzel","Patrick","Grand Est","Bas-Rhin","7","Professeur des Universités","Les Républicains"),
@@ -337,14 +336,14 @@ INSERT INTO lr (id_lr,nom_lr,prénom_lr,rég_lr,dép_lr,cir_lr,pro_lr,gro_lr)
  (61,"Genevard","Annie","Bourgogne-Franche-Comté","Doubs","5","Professeur du secondaire","Les Républicains");
  CREATE TABLE liot(id_liot int,
  nom_liot VARCHAR(250),
- pré_liot VARCHAR(250),
- rég_liot VARCHAR(250),
- dép_liot VARCHAR(250),
+ pre_liot VARCHAR(250),
+ reg_liot VARCHAR(250),
+ dep_liot VARCHAR(250),
  cir_liot VARCHAR(250),
  pro_liot VARCHAR(250),
  gro_liot VARCHAR(250)
  );
-INSERT INTO liot (id_liot,nom_liot,pré_liot,rég_liot,dép_liot,cir_liot,pro_liot,gro_liot)
+INSERT INTO liot (id_liot,nom_liot,pre_liot,reg_liot,dep_liot,cir_liot,pro_liot,gro_liot)
 
  values
  
@@ -370,14 +369,14 @@ INSERT INTO liot (id_liot,nom_liot,pré_liot,rég_liot,dép_liot,cir_liot,pro_li
  (20,"Bassire","Nathalie","Réunion","Réunion","3","Retraitée de lenseignement","Libertés, Indépendants, Outre-mer et Territoires");
  CREATE TABLE ni(id_ni int,
  nom_ni VARCHAR(250) ,
- pré_ni VARCHAR(250),
- rég_ni VARCHAR(250),
- dép_ni VARCHAR(250),
+ pre_ni VARCHAR(250),
+ reg_ni VARCHAR(250),
+ dep_ni VARCHAR(250),
  cir_ni VARCHAR(250),
  pro_ni VARCHAR(250),
  gro_ni VARCHAR(250)
  );
-INSERT INTO ni (id_ni,nom_ni,pré_ni,rég_ni,dép_ni,cir_ni,pro_ni,gro_ni)
+INSERT INTO ni (id_ni,nom_ni,pre_ni,reg_ni,dep_ni,cir_ni,pro_ni,gro_ni)
  values
  (1,"Ménard","Emmanuelle","Occitanie","Hérault","6","Journaliste et autre média","Non inscrit"),
  (2,"Besse","Véronique","Pays de la Loire","Vendée","4","Journaliste","Non inscrit"),
@@ -387,14 +386,14 @@ INSERT INTO ni (id_ni,nom_ni,pré_ni,rég_ni,dép_ni,cir_ni,pro_ni,gro_ni)
 
 CREATE TABLE rn(id_rn int,
 nom_rn VARCHAR(250),
-pré_rn VARCHAR(250),
-rég_rn VARCHAR(250),
-dép_rn VARCHAR(250),
+pr_rn VARCHAR(250),
+rg_rn VARCHAR(250),
+dp_rn VARCHAR(250),
 cir_rn VARCHAR(250),
 pro_rn VARCHAR(250),
 gro_rn VARCHAR(250)
 );
-INSERT INTO rn(id_rn,nom_rn,pré_rn,rég_rn,dép_rn,cir_rn,pro_rn,gro_rn)
+INSERT INTO rn(id_rn,nom_rn,pre_rn,reg_rn,dep_rn,cir_rn,pro_rn,gro_rn)
  values
  (1,"Levavasseur","Katiana","Normandie","Eure","2","Ouvrier de type industriel","Rassemblement National"),
  (2,"Colombier","Caroline","Nouvelle-Aquitaine","Charente","3","Avocate / Ancien cadre ","Rassemblement National"),
@@ -487,14 +486,14 @@ INSERT INTO rn(id_rn,nom_rn,pré_rn,rég_rn,dép_rn,cir_rn,pro_rn,gro_rn)
  
 CREATE TABLE ren(id_ren  int,
 nom_ren VARCHAR(250),
-pré_ren VARCHAR(250),
-rég_ren VARCHAR(250),
-dép_ren VARCHAR(250),
+pre_ren VARCHAR(250),
+reg_ren VARCHAR(250),
+dep_ren VARCHAR(250),
 cir_ren VARCHAR(250),
 pro_ren VARCHAR(250),
 gro_ren VARCHAR(250)
 );
-INSERT INTO ren (id_ren,nom_ren,pré_ren,rég_ren,dép_ren,cir_ren,pro_ren,gro_ren)
+INSERT INTO ren (id_ren,nom_ren,pre_ren,reg_ren,dep_ren,cir_ren,pro_ren,gro_ren)
   values
   (1,"Panosyan-Bouvet","Astrid","Ile-de-France","Paris","4","Cadre administratif et commercial dentreprise","Renaissance"),
  (2,"Le Feur","Sandrine","Bretagne","Finistère","4","Agriculteur-propriétaire exploitant","Renaissance"),
@@ -668,13 +667,13 @@ INSERT INTO ren (id_ren,nom_ren,pré_ren,rég_ren,dép_ren,cir_ren,pro_ren,gro_r
  (173,"Sitzenstuhl","Charles","Grand Est","Bas-Rhin","5","Cadre de la fonction publique","Renaissance");
  CREATE TABLE so(id_so int,
  nom_so VARCHAR(250),
- pré_so VARCHAR(250),
- rég_so VARCHAR(250),
- dép_so VARCHAR(250),
+ pre_so VARCHAR(250),
+ reg_so VARCHAR(250),
+ dep_so VARCHAR(250),
  cir_so VARCHAR(250),
  pro_so VARCHAR(250),
  gro_so VARCHAR(250));
-INSERT INTO so (id_so,nom_so,pré_so,rég_so,dép_so,cir_so,pro_so,gro_so)
+INSERT INTO so (id_so,nom_so,pre_so,reg_so,dep_so,cir_so,pro_so,gro_so)
  values
  (1,"Hajjar","Johnny","Martinique","Martinique","3","Professeur du second degré","Socialistes et apparentés (membre de l’intergroupe NUPES)"),
  (2,"Rabault","Valérie","Occitanie","Tarn-et-Garonne","1","Ingénieure","Socialistes et apparentés (membre de l’intergroupe NUPES)"),

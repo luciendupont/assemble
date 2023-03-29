@@ -10,7 +10,7 @@ class Rn
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column (name:"id_rn")]
     private ?int $id = null;
 
     #[ORM\Column(length: 255, nullable: true)]

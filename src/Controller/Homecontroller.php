@@ -9,7 +9,7 @@ class Homecontroller extends AbstractController
 {
     #[Route('/','assemble.index', methods:['GET']) ]
    public function index():Response
-   {
+{
     return $this->render('assemble.html.twig');
    }
 }

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Écologiste - NUPES
+
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container mt-4">
+<table class="table table-hover">
+  <H1>Écologiste - NUPES</H1>
+
+    
+        
+    
+    <thead>
+      <tr>
+        <th scope="col">numero</th>
+        <th scope="col">nom</th>
+        <th scope="col">prénom</th>
+        <th scope="col">région</th>
+        <th scope="col">département</th>
+        <th scope="col">circonscription</th>
+        <th scope="col">profession</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for ecolo in ecolos %}
+      <tr class="table-light">
+
+    
+
+        <td>{{ ecolo.id}}</td>
+        <td>{{ ecolo.nomecolo}}</td>
+        <td>{{ecolo.preecolo}}</td>
+        <td>{{ecolo.regecolo}}</td>  
+        <td>{{ecolo.depecolo}}</td>
+        <td>{{ecolo.cirecolo}}</td>
+        <td>{{ecolo.proecolo}}</td>
+     </tr>
+   {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
