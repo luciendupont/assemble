@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Socialistes et apparentés (membre de l’intergroupe NUPES)
-
-
+{% block title %}Libertés, Indépendants, Outre-mer et Territoires
 
 
 
@@ -15,8 +13,7 @@
 
 <div class="container mt-4">
 <table class="table table-hover">
-  <H1>Socialistes et apparentés (membre de l’intergroupe NUPES)
-
+  <H1>Libertés, Indépendants, Outre-mer et Territoires
 </H1>
 
     
@@ -34,18 +31,18 @@
       </tr>
     </thead>
     <tbody>
-{% for so in sos %}
+{% for liot in liots %}
       <tr class="table-light">
 
     
 
-        <td>{{ so.id}}</td>
-        <td>{{  so.nomso}}</td>
-        <td>{{ so.preso}}</td>
-        <td>{{ so.regso}}</td>  
-        <td>{{ so.depso}}</td>
-        <td>{{ so.cirso}}</td>
-        <td>{{so.proso}}</td>
+        <td>{{ liot.id}}</td>
+        <td>{{ liot.nomliot}}</td>
+        <td>{{ liot.preliot}}</td>
+        <td>{{ liot.regliot}}</td>  
+        <td>{{liot.depliot}}</td>
+        <td>{{ liot.cirliot}}</td>
+        <td>{{liot.proliot}}</td>
      </tr>
    {% endfor %}
     </tbody>

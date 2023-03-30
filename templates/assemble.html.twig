@@ -7,20 +7,20 @@ Assemblée nationale
 {% block body %}
  
 
+<div class="container mt-4">
 
-<div class="btn-group-vertical">
-    <button type="button" class="btn btn-light"  >Démocrate (MoDem et Indépendants)</button>
-    <button type="button" class="btn btn-light" >Horizons et apparentés</button>
-    <button type="button" class="btn btn-light"  >Les Républicains</button>
-    <button type="button" class="btn btn-light"  >Libertés, Indépendants, Outre-mer et Territoires</button>
-    <button type="button" class="btn btn-light"  >Non inscrit</button>
-    <button type="button" class="btn btn-light"  >Rassemblement National</button>
-    <button type="button" class="btn btn-light"  >Renaissance</button>
-    <button type="button" class="btn btn-light"  >Écologiste - NUPES</button>
-    <button type="button" class="btn btn-light">Gauche démocrate et républicaine - NUPES</button>
-    <button type="button" class="btn btn-light">La France insoumise - Nouvelle Union Populaire écologique et sociale</button>
-    <button type="button" class="btn btn-light">Socialistes et apparentés (membre de l’intergroupe NUPES)</button>
-  </div>
+<a href="{{path('app_modem')}}" class="btn btn-light">>Démocrate (MoDem et Indépendants)</a> <br>
+<a href="{{path('app_ecolo')}}" class="btn btn-light">>Écologiste - NUPES</a> <br>
+<a href="{{path('app_gnupes')}}" class="btn btn-light">>Gauche démocrate et républicaine - NUPES</a><br>  
+<a href="{{path('app_hor')}}" class="btn btn-light">>Horizons et apparentés</a>  <br>
+<a href="{{path('app_lfi')}}" class="btn btn-light">>La France insoumise - Nouvelle Union Populaire écologique et sociale</a> <br>
+<a href="{{path('app_lr')}}" class="btn btn-light">>Les Républicains</a><br>
+<a href="{{path('app_liot')}}" class="btn btn-light">>Libertés, Indépendants, Outre-mer et Territoires</a> <br>
+<a href="{{path('app_ni')}}" class="btn btn-light">>Non inscrit</a>  <br>
+<a href="{{path('app_rn')}}" class="btn btn-light">>Rassemblement National</a><br>
+<a href="{{path('app_ren')}}" class="btn btn-light">>Renaissance</a> <br>
+<a href="{{path('app_so')}}" class="btn btn-light">>Socialistes et apparentés (membre de l’intergroupe NUPES)</a> <br> 
+</div>
 
 
 {% endblock %}
